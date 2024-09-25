@@ -1,4 +1,4 @@
-public class ApplianceApp {
+public class ApplianceApp1 {
     public static void main(String[] args){
 
         Laptop laptop = new Laptop();
