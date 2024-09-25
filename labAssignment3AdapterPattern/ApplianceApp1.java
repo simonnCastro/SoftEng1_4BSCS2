@@ -10,7 +10,7 @@ public class ApplianceApp1 {
         SmartPhoneCharger smartPhoneCharger = new SmartPhoneCharger();
         PowerOutlet smartPhoneChargerPowerOutlet = new SmartPhoneChargerAdapter(smartPhoneCharger);
 
-        // integrate
+        // plugIn
         System.out.println(laptopPowerOutlet.plugIn());
         System.out.println(refrigeratorPowerOutlet.plugIn());
         System.out.println(smartPhoneChargerPowerOutlet.plugIn());
