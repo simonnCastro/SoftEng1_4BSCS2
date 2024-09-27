@@ -1,13 +1,19 @@
-# Integrating Different School Systems into a Unified School Management Application
-You are developing a school management application that helps administrators manage various school systems such as attendance, grading, and library management. Each system has different interfaces and methods. To ensure compatibility and seamless integration, you need to create adapters for different systems to allow them to connect to the unified school management application.
+# Plugging Devices into Power Outlets
+You are developing an application that helps users manage and control various electronic devices by plugging them into power outlets. Each device has different plug types, voltage, and amperage requirements. To ensure compatibility and safety, you need to create adapters for different devices to allow them to be plugged into standard power outlets.
 
 ## Adaptee Objects:
-- AttendanceSystem - Represents an attendance tracking system that needs to be integrated. It has the markAttendance() method.
-- GradingSystem - Represents a grading system that requires integration. It has the recordGrades() method.
-- LibrarySystem - Represents a library management system that needs to be integrated. It has the manageBooks() method.
+
+- Laptop - Represents a laptop device that needs to be plugged into a power source. It has the charge() method.
+- Refrigerator - Represents a refrigerator device that requires a power source. It has the startCooling() method.
+- SmartphoneCharger - Represents a smartphone charger that needs to be plugged in for charging. It has the chargePhone() method.
+
 ## Target Object:
-- SchoolManagementApp - Represents a unified school management application with a common interface for integrating systems. It defines the integrateSystem() method as the target method.
+- PowerOutlet - Represents a standard power outlet with a common interface for plugging in devices. It defines the plugIn() method as the target method.
+
 ## Adapter Objects:
-- AttendanceSystemAdapter - An adapter for integrating the attendance system into the school management application. It adapts the AttendanceSystem to the SchoolManagementApp interface, translating integrateSystem() to markAttendance().
-- GradingSystemAdapter - An adapter for integrating the grading system into the school management application. It adapts the GradingSystem to the SchoolManagementApp interface, translating integrateSystem() to recordGrades().
-- LibrarySystemAdapter - An adapter for integrating the library management system into the school management application. It adapts the LibrarySystem to the SchoolManagementApp interface, translating integrateSystem() to manageBooks().
+- LaptopAdapter - An adapter for plugging a laptop into a standard power outlet. It adapts the Laptop to the PowerOutlet interface, translating plugIn() to charge().
+- RefrigeratorAdapter - An adapter for plugging a refrigerator into a standard power outlet. It adapts the Refrigerator to the PowerOutlet interface, translating plugIn() to startCooling().
+- SmartphoneAdapter - An adapter for plugging a smartphone charger into a standard power outlet. It adapts the SmartphoneCharger to the PowerOutlet interface, translating plugIn() to chargePhone().
+
+##  UML Class Diagram:
+![alt text](https://github.com/simonnCastro/SoftEng1_4BSCS2/blob/master/labAssignment3AdapterPattern/lec3AssUML.png?raw=true)
