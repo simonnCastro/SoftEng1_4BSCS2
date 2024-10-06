@@ -16,4 +16,4 @@ The HotelApp needs to manage various hotel services for guest check-in and check
 - HotelApp: The client class that uses the FrontDesk facade to access and utilize hotel services seamlessly.
 
 ##  UML Class Diagram:
-![alt text](https://github.com/simonnCastro/SoftEng1_4BSCS2/blob/master/labAssignment3AdapterPattern/lab4AssignmentUML.png?raw=true)
+![alt text](https://github.com/simonnCastro/SoftEng1_4BSCS2/blob/master/labAssignment4FacadePattern/lab4AssignmentUML.png)
