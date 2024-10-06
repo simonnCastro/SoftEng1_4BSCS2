@@ -9,9 +9,9 @@ public class HotelApp {
         HotelService cartHotelService = new Cart();
         FrontDesk cartFrontDesk = new FrontDesk(cartHotelService);
 
-        valetFrontDesk.pickUpVehicle("AAA 0000");
-        houseKeepingFrontDesk.cleanRoom("00");
-        cartFrontDesk.requestCart("00");
+        valetFrontDesk.pickUpVehicle("AAA 111");
+        houseKeepingFrontDesk.cleanRoom("01");
+        cartFrontDesk.requestCart("01");
 
     }
 }
