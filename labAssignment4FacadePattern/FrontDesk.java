@@ -8,10 +8,10 @@ public class FrontDesk {
     public void pickUpVehicle(String plateNumber){
         hotelService.service(plateNumber);
     }
-    public void cleanRoom(String servicedetail){
-        hotelService.service(servicedetail);;
+    public void cleanRoom(String roomNumber){
+        hotelService.service(roomNumber);;
     }
-    public void requestCart(String servicedetail){
-        hotelService.service(servicedetail);
+    public void requestCart(String numberOfCarts){
+        hotelService.service(numberOfCarts);
     }
 }
