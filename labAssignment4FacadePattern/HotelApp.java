@@ -11,7 +11,7 @@ public class HotelApp {
 
         valetFrontDesk.pickUpVehicle("AAA 111");
         houseKeepingFrontDesk.cleanRoom("01");
-        cartFrontDesk.requestCart("01");
+        cartFrontDesk.requestCart("1");
 
     }
 }
