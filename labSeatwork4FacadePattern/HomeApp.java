@@ -3,10 +3,10 @@ public class HomeApp {
         HomeService lightHomeService = new ConcreteLight();
         HomeInterface lightFacade = new HomeInterface(lightHomeService);
 
-        HomeService tvHomeService = new ConcreteLight();
+        HomeService tvHomeService = new ConcreteTv();
         HomeInterface tvFacade = new HomeInterface(tvHomeService);
 
-        HomeService airConditioningService = new ConcreteLight();
+        HomeService airConditioningService = new ConcreteAirConditioning();
         HomeInterface airConditioningFacade = new HomeInterface(airConditioningService);
 
         lightFacade.turnOnAll();
